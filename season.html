@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>Home - Brand</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic">
+    <link rel="stylesheet" href="assets/fonts/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/bootstrap/css/anime.css">
+    <link rel="stylesheet" href="assets/fonts/simple-line-icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+
+
+</head>
+
+<body onload = "preview();">
+    <nav class="navbar navbar-dark navbar-expand bg-dark navigation-clean">
+        <div class="container">
+            <div class="row">
+            <button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"></button>
+            <div class="collapse navbar-collapse " id="navcol-1">
+                <a class=" font-italic navbar-brand logo" href="index.html" style="background: url(&quot;assets/img/anime2.jpg&quot;) left top / 60px no-repeat, #00000000;font-family: Acme, sans-serif;font-size: 27px;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Animeku</a>
+                <!-- <a class=" font-italic navbar-brand col-sm-9" href="index.html">Animeku</a> -->
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <li class="nav-item dropdown">
+                        <a class="nav-link active" href="season.html">Season</a>
+                        </li>
+
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Genre</a>
+                            <div class="dropdown-menu" aria-labelledby="dropdownMenuButton" id="genre">
+                              <a class="dropdown-item" onclick="keluar('1')">Action</a>
+                              <a class="dropdown-item" onclick="keluar('7')">Mystery</a>
+                              <a class="dropdown-item" onclick="keluar('38')">Military</a>
+                              <a class="dropdown-item" onclick="keluar('31')">Super Power</a>
+                              <a class="dropdown-item" onclick="keluar('8')">Drama</a>
+                              <a class="dropdown-item" onclick="keluar('10')">Fantasy</a>
+                              <a class="dropdown-item" onclick="keluar('27')">Shounen</a>
+                            </div>
+                        </li>
+                </ul>
+
+                <!-- <div class="col-lg-12">
+                    <form id="search_form">
+                      <input type="text" placeholder="Search.." name="search" id="search" type="text" class="validate">
+                    </form>
+                      <button type="submit"><i class="fa fa-search"></i></button>
+                  </div> -->
+                
+
+            </div>
+
+        </div>
+        </div>
+    </nav>
+    <header class="text-center text-white masthead" style="background:url('assets/img/anime1.jpg')no-repeat center center;background-size:cover;">
+        <div class="overlay"></div>
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-9 mx-auto">
+                    <h1 class="mb-5">Website Informasi Seputar Anime di Indonesia !!</h1>
+                </div>
+                <div class="col-md-10 col-lg-8 col-xl-7 mx-auto">
+                    
+                    <div class="center-form-row">
+                        <select class="form-select " aria-label="Default select example" style="width:30%;" id="year">
+                          <option value="" >Pilih</option>
+                          <option value="2019" >2017</option>
+                          <option value="2019" >2018</option>
+                          <option value="2019" >2019</option>
+                          <option value="2020" >2020</option>
+                        </select>
+                        <select class="form-select " aria-label="Default select example" style="width:30%;" id="season">
+                            <option value="" >Pilih</option>
+                            <option value="winter" >Winter</option>
+                            <option value="spring" >Spring</option>
+                            <option value="fall" >Fall</option>
+                            <option value="summer" >Summer</option>
+                          </select>
+                          <br>
+                          <br>
+                          <button class="button" type="button" onclick="muncul1()">Cari</button>
+                      </div>
+                   
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="text-center bg-light features-icons">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-screen-desktop m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Anime</h3>
+                        <p class="lead mb-0">Terdiri dari semua jenis dan judul anime yang sudah muncul di Indonesia</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-layers m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Genre</h3>
+                        <p class="lead mb-0">Terdiri dari beberapa genre anime yang dapat Anda temukan</p>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="mx-auto features-icons-item mb-5 mb-lg-0 mb-lg-3">
+                        <div class="d-flex features-icons-icon"><i class="icon-check m-auto text-primary" data-bss-hover-animate="pulse"></i></div>
+                        <h3>Upcoming</h3>
+                        <p class="lead mb-0">Pantau terus jenis dan judul anime favorite kalian setiap musim ..!!</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <hr style='border:1px outset;background-color:#000000;color:#353535;height:5px;width:75%;text-align:left;margin-left:12.5%'/>
+        
+    <div class="container">
+        <h1 class = text-center>Daftar Anime</h1>
+        <br>
+        <div class = "row" id="hasil">
+        </div>
+    </div>
+    <div class="container">
+        <div class = "row" id="hasil1">
+        </div>
+    </div>
+    <div class="container">
+        <div class = "row" id="home">
+            <div class="col-lg-4 d-flex align-items-stretch">
+        </div>
+    </div>
+
+    <footer class="bg-light footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left my-auto h-90">
+                    <ul class="list-inline mb-2">
+                        <li class="list-inline-item"><a href="#">Tentang</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Kontak</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Terms of &nbsp;Use</a></li>
+                        <li class="list-inline-item"><span>⋅</span></li>
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                    </ul>
+                    <p class="text-muted small mb-4 mb-lg-0">© Brand 2021. Made by Ridho Wisnu Firmantya.</p>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right my-auto h-100">
+                    <ul class="list-inline mb-0">
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-facebook fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-twitter fa-2x fa-fw"></i></a></li>
+                        <li class="list-inline-item"><a href="#"><i class="fa fa-instagram fa-2x fa-fw"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/bs-init.js"></script>
+    <script src="season.js"></script>
+    <script src="package/dist/sweetalert2.all.min.js"></script>
+</body>
+
+</html>
